@@ -6,7 +6,6 @@ public class Kalkulator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-
         System.out.println("Kalkulator Sederhana");
         System.out.println("Pilih operasi yang diinginkan:");
         System.out.println("1. Penjumlahan (+)");
@@ -17,8 +16,13 @@ public class Kalkulator {
         System.out.print("Masukkan pilihan operasi (1-4): ");
         int pilihan = input.nextInt();
 
-        double hasil = 0;
+        System.out.println("Masukkan bilangan pertama: ");
+        int bil1 = input.nextInt();
 
+        System.out.println("Masukkan bilangan kedua: ");
+        int bil2 = input.nextInt();
+
+        int hasil = 0;
 
         switch (pilihan) {
             case 1:
@@ -42,7 +46,7 @@ public class Kalkulator {
                 }
                 break;
             default:
-                System.out.println("Pilihan operasi tidak valid.");
+                System.out.println("Pilihan tidak ada.");
         }
 
         input.close();
